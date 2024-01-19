@@ -1,4 +1,4 @@
-import {SkipNextRounded, SkipPreviousRounded, SouthRounded, VolumeUp } from '@mui/icons-material'
+import {SkipNextRounded, SkipPreviousRounded, VolumeUp } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import React, { useState, useRef } from 'react'
 import { useDispatch } from 'react-redux'
