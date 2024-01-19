@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { darkTheme, lightTheme } from './utils/Themes.js'
 import Signup from '../src/components/Signup.jsx';
 import Signin from '../src/components/Signin.jsx';
-import OTP from '../src/components/OTP.jsx'
+// import OTP from '../src/components/OTP.jsx'
 import Navbar from '../src/components/Navbar.jsx';
 import Menu from '../src/components/Menu.jsx';
 import Dashboard from '../src/pages/Dashboard.jsx'
@@ -49,7 +49,7 @@ function App() {
   const [uploadOpen, setUploadOpen] = useState(false);
 
 
-  const { currentUser } = useSelector(state => state.user);
+  // const { currentUser } = useSelector(state => state.user);
   const dispatch = useDispatch()
     //set the menuOpen state to false if the screen size is less than 768px
     useEffect(() => {
@@ -69,7 +69,7 @@ function App() {
       dispatch(
         closeSignin()
       )
-    },[])
+    },[dispatch])
 
   return (
 
